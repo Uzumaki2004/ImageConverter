@@ -104,6 +104,17 @@
   #downloadBtn:hover:not([disabled]) {
     background: #4a7a50;
   }
+  .weather {
+    padding: 10px;
+    margin: 5px;
+  }
+  #city {
+    padding: 10px;
+    margin: 5px;
+  }
+  #result {
+    margin-top: 20px;
+  }
   .label-section {
     font-weight: 700;
     color: #31708e;
@@ -147,11 +158,10 @@
 
   <button id="convertBtn" disabled>Convert to Ghibli Style</button>
   <button id="downloadBtn" disabled>Download Converted Image</button>
-  
 </main>
 <input type="text" id="city" placeholder="Enter city name">
-  <button onclick="getWeather()">Get Weather</button>
-  <div id="result"></div>
+<button class="weather" onclick="getWeather()">Get Weather</button>
+<div id="result"></div>
 <footer>
   &copy; 2024 Ghibli Style Image Converter
 </footer>
